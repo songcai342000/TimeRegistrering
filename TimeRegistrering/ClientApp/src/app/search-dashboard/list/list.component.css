@@ -1,0 +1,142 @@
+.main{
+    height: auto;
+    background: #f2f2f2;
+    padding-bottom: 6em;
+}
+
+#labelDiv {
+  font-weight: 600;
+  text-align: center;
+}
+
+.tableRow {
+  display: grid;
+  border: 1px solid #efefef;
+  border-bottom: none;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: auto;
+}
+
+.tableHeader {
+  background-color: #ddd;
+  height: auto;
+  font-weight: 600;
+}
+
+  .tableHeader div {
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+  }
+
+.rowCustom > div {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 1.5em;
+  word-break: break-word;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+a {
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  height: 5vh;
+  vertical-align: central;
+  margin-right: 0.25vw;
+  background-color: #b300b3;
+  border-radius: 25px;
+  font-size: 0.9em;
+}
+
+
+.table-background {
+  background-color: #f2f2f2;
+  padding-top: 3em;
+  padding: 1em;
+}
+
+  .table-background > div {
+    background-color: aliceblue;
+  }
+
+#timeSheets{
+    height: auto;
+}
+
+.projectName-customer {
+  height: 5vh;
+  vertical-align: central;
+  padding-top: 0.8em;
+}
+
+.title-customer {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#resultContainer {
+    background: aliceblue;
+}
+
+#icon2div{
+    margin-left: 0.2em;
+}
+
+
+#pdf {
+  font-size: 0.9em;
+}
+
+.icondiv {
+  padding: 0;
+  margin-right: 0;
+}
+
+#icon1div {
+  position: relative;
+  left: 1.2em;
+  top: 0.5em;
+}
+
+#icon2div {
+  position: relative;
+  left: 0.2em;
+  top: 0.5em;
+}
+
+#pdftext, #printtext {
+  font-size: 0.7rem;
+  background: #f2f2f2;
+  padding: 2px;
+  font-weight: normal;
+  position: relative;
+  top: 0.5em;
+}
+
+#icondiv::after {
+  content: "";
+  position: relative;
+  top: -120%;
+  right: 0.5em;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #f2f2f2;
+}
+
+#notice {
+ text-align: center;
+ height: 0;
+ visibility: hidden;
+}
+
+span {
+  font-weight: 600;
+  border: none;
+  font-size: 1.4em;
+  background-color: #ffccff;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}

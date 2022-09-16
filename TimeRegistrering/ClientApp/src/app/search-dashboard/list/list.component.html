@@ -1,0 +1,32 @@
+<div class="main d-block" id="base">
+  <div>
+    <app-search (getProjects)="ongetProjects($event)" id="search"></app-search>
+  </div>
+  <div class="text-center font-weight-bold" id="notice" style="position: relative; top: 3em; ">
+    <span id="noticeSpan" *ngIf="registrations && registrations.length < 1">No timesheet matches your search conditions!</span>
+  </div>
+  <div class=" table-background ml-0 mr-o h-auto" id="timeSheets" *ngIf="registrations.length > 0">
+    <div> 
+      <div class="floatRight d-flex">
+        <div class="icondiv" id="icon1div">
+          <i class="fa fa-print" id="print" (mouseover)="printvisible()" (mouseout)="printinvisible()"></i>
+          <div class="p-0" style="position: relative; right: 0.5em; top: 0%; z-index: 1; visibility: hidden" id="printtooltip"><span id="printtext">Print</span></div>
+        </div>
+        <div class="icondiv" id="icon2div">
+          <i class="fa fa-file-pdf-o" aria-hidden="true" id="pdf" (mouseover)="pdfvisible()" (mouseout)="pdfinvisible()"></i>
+          <div class="p-0" style="position: relative; right: 0.5em; top: 0%; z-index: 1; visibility: hidden" id="pdftooltip"><span id="pdftext">Pdf</span></div>
+        </div>
+      </div>
+      <div class="text-center font-weight-bold title-customer" ><label>SEARCH RESULT</label></div>
+      <div class="tableHeader tableRow w-100" ><div>Project</div><div>Comment</div><div>Duration<br> (hrs)</div><div>Date</div><div></div></div>
+      <div class="tableRow rowCustom" id="resultContainer" *ngFor="let registration of registrations">
+        <div>{{registration.projectName}}</div>
+        <div>{{registration.comment}}</div>
+        <div>{{registration.hours}}</div>
+        <div>{{registration.registrationTime.toString().substring(0, 10)}}</div>
+
+      </div>
+    </div>
+   
+    </div>
+</div>

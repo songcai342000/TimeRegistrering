@@ -1,0 +1,23 @@
+<div class=" table-background ml-0 mr-o" id="tableContainer">
+  <div id="timeSheets" *ngIf="allTimesheets">
+    <div class="floatRight d-flex">
+      <div class="icondiv" id="icon1div">
+        <i class="fa fa-print" id="print" (mouseover)="printvisible()" (mouseout)="printinvisible()"></i>
+        <div class="p-0" id="printtooltip"><span id="printtext">Print</span></div>
+      </div>
+      <div class="icondiv" id="icon2div">
+        <i class="fa fa-file-pdf-o" aria-hidden="true" id="pdf" (mouseover)="pdfvisible()" (mouseout)="pdfinvisible()"></i>
+        <div class="p-0" id="pdftooltip"><span id="pdftext">Pdf</span></div>
+      </div>
+    </div>
+    <div class="text-center font-weight-bold title-customer"><label>TIMESHEETS</label></div>
+    <div class="tableHeader tableRow w-100"><div>Project</div><div>Comment</div><div>Duration (hrs)</div><div>Date</div><div></div></div>
+    <div class="tableRow rowCustom" id="resultContainer" *ngFor="let registration of allTimesheets">
+      <div>{{registration.projectName}}</div>
+      <div>{{registration.comment}}</div>
+      <div>{{registration.hours}}</div>
+      <div>{{registration.registrationTime.toString().substring(0, 10)}}</div>
+    </div>
+  </div>
+  <div id="notice" *ngIf="!allTimesheets || allTimesheets.length < 1"><span>No timesheet is found!</span></div>
+</div>

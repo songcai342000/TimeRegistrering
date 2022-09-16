@@ -1,0 +1,29 @@
+.main {
+  background-color: #ebebeb;
+  padding: 1em;
+  padding-top: 0;
+}
+
+  .main > div {
+    display: grid;
+    grid-template-rows: auto auto;
+    background: #f2f2f2;
+  }
+
+  a:hover{
+      color: black;
+  }
+
+h5 {
+  font-weight: 600;
+}
+
+.sectionTopic {
+  padding-top: 7em;
+  padding-bottom: 2em;
+}
+
+.sectionContent {
+  padding-bottom: 7em;
+  font-weight: 600;
+}

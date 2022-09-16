@@ -1,0 +1,9 @@
+<div class="main pb-2">
+  <div class="floatRight">
+    <button href="/" (click)="like()"><i class="fa fa-thumbs-o-up" (mouseover)="visible()" (mouseout)="invisible()"></i></button>
+    <div class="p-0" style="position: relative; right: -2em; top: 120%; z-index: 1; visibility: hidden" id="tooltip" ><span id="tooltiptext">Like Site</span></div>
+  </div>
+  <div class="float-right w-100 text-right" *ngIf="userData.isLoggedIn">
+    <span id="welcomeMark">Welcome {{userData.userName}}!</span>
+  </div>
+</div>

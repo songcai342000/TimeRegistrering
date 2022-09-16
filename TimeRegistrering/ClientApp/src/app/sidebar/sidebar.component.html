@@ -1,0 +1,47 @@
+<div class="main">
+  <nav class="ml-0 mr-0">
+    <ul>
+
+      <li class="nav-item d-flex"
+          [routerLinkActive]='["link-active"]'>
+        <i class="fa fa-home i-position" style="font-size: 1em"></i><a class="nav-link text-dark" [routerLink]='[""]' href="" id="login">Home</a>
+      </li>
+    
+
+      <li class="nav-item d-flex" [routerLinkActive]='["link-active"]' *ngIf="!userData.isLoggedIn">
+        <i class="fa fa-user i-position" style="font-size: 1em"></i><a class="nav-link text-dark" [routerLink]='["/login"]' href="/login" id="login">Log in</a>
+      </li>
+
+
+      <li class="nav-item d-flex" [routerLinkActive]='["link-active"]' *ngIf="userData.isLoggedIn && userData.role==userRole.User">
+    
+          <i class="fa fa-user-circle i-position"></i><a class="nav-link text-dark btn-link" data-toggle="collapse" [routerLink]='["/user-home"]' data-target="#menu2">
+            My Account
+          </a><i class="fa fa-caret-down i-position" aria-hidden="true" ></i>
+</li>
+
+      <li class="nav-item d-flex " [routerLinkActive]='["link-active"]' *ngIf="userData.isLoggedIn && userData.role==userRole.User">
+        <i class="fa fa-table i-position" style="font-size: 1em"></i><a class="nav-link text-dark btn-link" *ngIf="userData.isLoggedIn && userData.role==userRole.User" [routerLink]='["/search-dashboard/list"]' id="timesheet1">
+          Get Timesheets
+        </a>
+      </li>
+      <li class="nav-item d-flex" *ngIf="userData.isLoggedIn && userData.role==userRole.Admin">
+        <i class="fa fa-plus i-position" style="font-size: 1em"></i><a class="nav-link text-dark btn-link"  [routerLink]='["/add"]'>
+          Create project
+        </a>
+      </li>
+      <li class="nav-item d-flex " [routerLinkActive]='["link-active"]' *ngIf="userData.isLoggedIn && userData.role==userRole.Admin">
+        <i class="fa fa-table i-position" style="font-size: 1em"></i><a class="nav-link text-dark btn-link" [routerLink]='["/search-dashboard/list"]' id="timesheet2">
+          Get Timesheets
+        </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]='["link-active"]' *ngIf="userData.isLoggedIn">
+        <i class="fa fa-sign-out i-position" aria-hidden="true"></i><a class="nav-link text-dark btn-link" [routerLink]='["/"]' (click)="logout()" id="logout" style="margin-right: 1em">Log out</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]='["link-active"]' *ngIf="!userData.isLoggedIn">
+        <i class="fa fa-hand-o-up" id="hand"></i>
+      </li>
+    </ul>
+  </nav>
+</div>
+

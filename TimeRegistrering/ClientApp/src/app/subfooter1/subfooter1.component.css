@@ -1,0 +1,97 @@
+.w-100{
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 1em;
+    padding-top: 0;
+    background: #ebebeb;
+}
+
+.sectionTopic {
+  background: #f2f2f2;
+  padding-bottom: 4em;
+}
+
+h5 {
+  font-weight: 600;
+  margin-top: 5em;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.sectionContent {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #f2f2f2;
+  padding-bottom: 0;
+}
+
+.sectionContent > div {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  padding: 6em 2em 7em 2em;
+  /*padding-left: 2em;
+  padding-right: 2em;*/
+}
+  .sectionContent > div div:nth-child(6) {
+    margin-top: 1em;
+  }
+
+  .saleTitle {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+.sectionContent div {
+  margin-top: 0.5em;
+}
+
+.sectionContent > div:nth-child(1) {
+  background-color: #f2f2f2;
+}
+
+.sectionContent > div:nth-child(3) {
+  background-color: #f2f2f2;
+}
+
+.sectionContent > div:nth-child(1):hover {
+  background-color: black;
+  opacity: 0.9;
+  color: white;
+}
+
+.sectionContent > div:nth-child(3):hover {
+  background-color: black;
+  opacity: 0.9;
+  color: white;
+}
+
+.inclusive {
+  position: relative;
+  background-color: #595959;
+  color: white;
+}
+
+ .inclusive div:nth-child(1) {
+    position: relative;
+    top: 0;
+}
+
+  .inclusive div {
+    position: relative;
+    top: 20%;
+  }
+
+  .inclusive:hover {
+    background-color: black;
+    opacity: 0.9;
+    /*color: #80b3ff;*/
+  }
+
+.btnCustomer {
+  background: #b300b3;
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  width: auto;
+  font-weight: 600;
+}

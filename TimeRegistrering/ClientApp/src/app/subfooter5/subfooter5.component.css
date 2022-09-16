@@ -1,0 +1,29 @@
+.main {
+  text-align: center;
+  background-color: #ddd;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+  .main > div {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-left: 33.33%;
+    margin-right: 33.33%;
+  }
+
+h5 {
+  margin-bottom: 1em;
+}
+
+.main > div:nth-child(2) {
+  background: #ebebeb;
+}
+
+  .main > div:nth-child(2) div {
+    padding: 8px;
+  }
+
+  input {
+      color: blue;
+  }

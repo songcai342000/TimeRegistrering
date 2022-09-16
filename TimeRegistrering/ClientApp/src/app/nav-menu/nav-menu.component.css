@@ -1,0 +1,103 @@
+header {
+  background-color: #f2f2f2;
+}
+a.navbar-brand {
+  white-space: normal;
+  word-break: break-all;
+  font-size: 2.5em;
+  font-weight: 700;
+  position: relative;
+  top: 2%;
+}
+
+nav {
+  border-radius: 0;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+}
+
+  nav > div {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+    position: relative;
+    top: 1em;
+  }
+
+.floatRight {
+  margin: 0;
+  width: 100%;
+}
+
+nav + div {
+  padding-left: 0;
+}
+
+nav + div div {
+  padding: 0;
+}
+
+input[type=text] {
+  background-image: linear-gradient(to bottom, rgba(221, 221, 221, 0.5) 0%, rgba(221, 221, 221, 0.2) 100%);
+  position: absolute;
+  right: 0;
+  width: 40%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  /*height: 4.2vh;*/
+  height: 2.2em;
+}
+
+button[type=submit] {
+  position: relative;
+  right: 0.5em;
+  border: none;
+  width: 1em;
+  height: 2.2em;
+  background-color: transparent;
+}
+
+button[type=submit]:hover{
+    color: black;
+}
+
+@media (max-width: 800px) and (min-width: 300px) {
+  a.navbar-brand {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+}
+
+.navbar a {
+  color: #b300b3;
+}
+
+button {
+    color: black;
+}
+
+@media (max-width: 800px) and (min-width: 300px) {
+  ul li {
+    margin-right: 1vw;
+  }
+}
+
+html {
+  font-size: 14px;
+}
+
+/*@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}*/
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}

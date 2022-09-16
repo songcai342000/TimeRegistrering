@@ -1,0 +1,107 @@
+
+footer {
+  background-color: black;
+  color: white;
+  margin-bottom: 0;
+  border-radius: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 13px;
+}
+
+li {
+    list-style: none;
+}
+
+.d-flex li a {
+  color: white;
+  text-decoration: none;
+}
+
+.d-flex li a:hover {
+  text-decoration: underline;
+}
+
+#coverPrivacy, #coverCookie {
+  width: 0;
+  border-bottom: 1px solid white;
+  position: relative;
+  top: -50%;
+  color: transparent;
+  background-color: transparent;
+  transition: width 2s;
+}
+
+  #coverPrivacy:hover, #coverCookie:hover{
+      width: 100%;
+  }
+
+@media (max-width: 767px) {
+  #foot {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 0.8em;
+  }
+}
+
+span {
+  padding: 0;
+  font-size: 1.8em;
+  color: #ff00ff;
+}
+
+#backtext{
+  font-size: 1em;
+  font-weight: 600;
+  position: relative;
+}
+
+.footerTitle{
+    font-weight: 600;
+}
+
+#back {
+    width: 16%;
+    position: relative;
+    left: -3em;
+}
+
+ul {
+    width: 21%;
+}
+
+i {
+  color: #ff00ff;
+}
+
+button {
+  background: transparent;
+  font-weight: 600;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+  button:hover {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+  }
+
+  button:active {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+  }
+
+  button:visited {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+  }
+
+  button:focus {
+    background: transparent;
+    text-decoration: none;
+    color: white;
+  }

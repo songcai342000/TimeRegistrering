@@ -1,0 +1,34 @@
+<div class="main">
+  <div class="background">
+    <div class="base">
+      <div class="p-0 m-md-2">
+ <div id="explain">(Search by project name, date or both. If no search condition is chosen, it shows all your timesheets)</div>
+  <div class="form-group">
+    <label for="projectName">Select Project</label>
+    <select class="form-control"
+            (change)="getNameValue($event)" value={{projectName}}>
+      <option value=""></option>
+      <option value="ABC Kidgarden Construction">ABC Kidgarden Construction</option>
+      <option value="Sunshine Primary School Construction">Sunshine Primary School Construction</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="date">Select Date</label>
+    <input class="form-control" type="date"
+           (change)="getDateValue($event)" value={{date}}>
+  </div>
+  <div><input type="hidden" id="condition-input" #conditions style="height: 0" value='{{condition}}' (change)="getInputConditions($event)"></div>
+  <button type="submit" class="btn border-3 text-white"
+          style="font-size: 1em" (click)="sendCondition(conditions.value)">
+    Submit
+  </button>
+  <button type="button" class="btn border-3 text-white"
+          (click)="reset()" style="font-size: 1em" id="resetBtn">
+    Reset
+  </button>
+      </div>
+      
+    </div>
+</div>
+  </div>
+
